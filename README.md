@@ -19,14 +19,14 @@
 普通使用者只需要下载 Release 中的：
 
 ```text
-Amazon素材助手-v1.0.2-可加载版.zip
+amazon-media-tool-v1.0.2-unpacked.zip
 ```
 
 需要查看或修改代码的开发者，可以克隆仓库后自行构建。
 
 ## 第一次安装
 
-1. 下载 `Amazon素材助手-v1.0.2-可加载版.zip`。
+1. 下载 `amazon-media-tool-v1.0.2-unpacked.zip`。
 2. 把 ZIP 完整解压到一个固定文件夹，不要直接从压缩包内部加载。
 3. 在 Chrome 地址栏输入并打开 `chrome://extensions`。
 4. 打开页面右上角的“开发者模式”。

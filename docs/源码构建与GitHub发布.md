@@ -67,7 +67,7 @@ git push origin v1.0.2
 1. 选择标签 `v1.0.2`；
 2. 标题填写 `Amazon 素材助手 v1.0.2`；
 3. 写明主要功能、权限和已知限制；
-4. 上传 `Amazon素材助手-v1.0.2-可加载版.zip`；
+4. 上传 `amazon-media-tool-v1.0.2-unpacked.zip`；
 5. 检查后点击“Publish release”。
 
 建议的 Release 说明：
