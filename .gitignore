@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.crx
+*.zip
+.DS_Store
+.crxray-audit.json
+coverage/
+npm-debug.log*

@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon 素材助手",
+  "short_name": "Amazon 素材助手",
+  "version": "1.0.2",
+  "description": "批量下载 Amazon 商品图，并捕获商品页 HLS 视频保存为 MP4。无广告、无数据上传。",
+  "minimum_chrome_version": "102",
+  "action": {
+    "default_title": "Amazon 素材助手",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.amazon.com/*",
+    "*://*.amazon.ae/*",
+    "*://*.amazon.ca/*",
+    "*://*.amazon.cn/*",
+    "*://*.amazon.co.jp/*",
+    "*://*.amazon.co.uk/*",
+    "*://*.amazon.com.au/*",
+    "*://*.amazon.com.be/*",
+    "*://*.amazon.com.br/*",
+    "*://*.amazon.com.mx/*",
+    "*://*.amazon.com.tr/*",
+    "*://*.amazon.de/*",
+    "*://*.amazon.eg/*",
+    "*://*.amazon.es/*",
+    "*://*.amazon.fr/*",
+    "*://*.amazon.in/*",
+    "*://*.amazon.it/*",
+    "*://*.amazon.nl/*",
+    "*://*.amazon.pl/*",
+    "*://*.amazon.sa/*",
+    "*://*.amazon.se/*",
+    "*://*.amazon.sg/*",
+    "*://*.media-amazon.com/*",
+    "*://*.ssl-images-amazon.com/*",
+    "*://images.amazon.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.amazon.com/*",
+        "*://*.amazon.ae/*",
+        "*://*.amazon.ca/*",
+        "*://*.amazon.cn/*",
+        "*://*.amazon.co.jp/*",
+        "*://*.amazon.co.uk/*",
+        "*://*.amazon.com.au/*",
+        "*://*.amazon.com.be/*",
+        "*://*.amazon.com.br/*",
+        "*://*.amazon.com.mx/*",
+        "*://*.amazon.com.tr/*",
+        "*://*.amazon.de/*",
+        "*://*.amazon.eg/*",
+        "*://*.amazon.es/*",
+        "*://*.amazon.fr/*",
+        "*://*.amazon.in/*",
+        "*://*.amazon.it/*",
+        "*://*.amazon.nl/*",
+        "*://*.amazon.pl/*",
+        "*://*.amazon.sa/*",
+        "*://*.amazon.se/*",
+        "*://*.amazon.sg/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon 素材助手</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">A</div>
+        <div>
+          <h1>Amazon 素材助手</h1>
+          <p id="page-summary">正在识别当前商品页…</p>
+        </div>
+      </header>
+
+      <section class="panel image-panel">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">PRODUCT IMAGES</span>
+            <h2>整套商品图 <span id="image-count" class="count">0 张</span></h2>
+          </div>
+          <button id="refresh-images" class="icon-button" title="重新识别商品图" aria-label="重新识别商品图">↻</button>
+        </div>
+
+        <div class="toolbar">
+          <button id="select-all" class="text-button">全选</button>
+          <button id="select-none" class="text-button">取消全选</button>
+          <span>自动去除缩略图尺寸参数</span>
+        </div>
+
+        <p id="image-empty" class="empty-state">当前页面暂未识别到商品图。</p>
+        <div id="image-grid" class="image-grid" aria-live="polite"></div>
+        <button id="download-zip" class="primary-button" disabled>整套打包 ZIP</button>
+      </section>
+
+      <section class="panel video-panel">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">PRODUCT VIDEO</span>
+            <h2>商品视频 <span id="video-count" class="count">0 个</span></h2>
+          </div>
+          <div class="heading-actions">
+            <button id="refresh-videos" class="icon-button" title="刷新视频列表" aria-label="刷新视频列表">↻</button>
+            <button id="clear-videos" class="icon-button danger" title="清除当前页记录" aria-label="清除当前页记录">×</button>
+          </div>
+        </div>
+        <p class="hint">先在商品页播放一次视频，扩展会捕获 HLS 地址并优先选择最高画质。</p>
+        <p id="video-empty" class="empty-state">尚未捕获视频。请先在当前商品页播放视频。</p>
+        <div id="video-list" class="video-list" aria-live="polite"></div>
+      </section>
+
+      <section id="progress-panel" class="progress-panel" hidden>
+        <div class="progress-copy">
+          <strong id="progress-title">正在处理</strong>
+          <span id="progress-detail"></span>
+        </div>
+        <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+      </section>
+
+      <footer>
+        <span class="privacy-dot"></span>
+        无广告 · 无账号读取 · 无数据上传
+      </footer>
+    </main>
+
+    <div id="toast" class="toast" role="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
