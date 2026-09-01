@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Amazon 素材助手",
   "short_name": "Amazon 素材助手",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "批量下载 Amazon 商品图，并捕获商品页 HLS 视频保存为 MP4。无广告、无数据上传。",
   "minimum_chrome_version": "102",
   "action": {

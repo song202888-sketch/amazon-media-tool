@@ -1,9 +1,14 @@
 {
   "name": "amazon-media-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "license": "MIT",
   "description": "Amazon 商品图整套下载与商品视频保存 Chrome 扩展",
+  "author": "郑耿豪、黄耀嵩",
+  "contributors": [
+    "郑耿豪",
+    "黄耀嵩"
+  ],
   "type": "module",
   "scripts": {
     "build": "node scripts/build.mjs",

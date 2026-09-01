@@ -341,11 +341,24 @@ h2 {
 
 footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 5px;
   color: var(--muted);
   font-size: 10px;
+}
+
+.privacy-line {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.author-credit {
+  color: #7b8491;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .privacy-dot {

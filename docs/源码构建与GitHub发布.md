@@ -41,7 +41,7 @@ npm run check
 ```bash
 git init -b main
 git add .
-git commit -m "Initial open-source release v1.0.2"
+git commit -m "Release v1.0.3"
 git remote add origin https://github.com/<你的GitHub用户名>/amazon-media-tool.git
 git push -u origin main
 ```
@@ -58,22 +58,22 @@ git ls-files
 ## 五、创建标签和 Release
 
 ```bash
-git tag -a v1.0.2 -m "Amazon 素材助手 v1.0.2"
-git push origin v1.0.2
+git tag -a v1.0.3 -m "Amazon 素材助手 v1.0.3"
+git push origin v1.0.3
 ```
 
 然后在 GitHub 仓库打开 Releases，点击“Draft a new release”：
 
-1. 选择标签 `v1.0.2`；
-2. 标题填写 `Amazon 素材助手 v1.0.2`；
+1. 选择标签 `v1.0.3`；
+2. 标题填写 `Amazon 素材助手 v1.0.3`；
 3. 写明主要功能、权限和已知限制；
-4. 上传 `amazon-media-tool-v1.0.2-unpacked.zip`；
+4. 上传 `amazon-media-tool-v1.0.3-unpacked.zip`；
 5. 检查后点击“Publish release”。
 
 建议的 Release 说明：
 
 ```text
-Amazon 素材助手 v1.0.2 首个公开版本
+Amazon 素材助手 v1.0.3
 
 - 整套 Amazon 商品图识别、去重和高清 ZIP 下载
 - 当前商品变体的 ASIN 与标题命名
